@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobs - Green Algorithms</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-white">
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div class="logo">
+          <img src="file.enc" alt="Logo Placeholder" width="50"> <!-- Logo Placeholder -->
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="jobs.html">Jobs</a></li>
+            <li class="nav-item"><a class="nav-link" href="volunteers.html">Volunteers & Internships</a></li>
+            <li class="nav-item"><a class="nav-link" href="collab.html">Collaboration Companies</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+          <div class="auth-buttons ml-3">
+            <a href="#" class="btn btn-outline-light">🔒 Login / 🚀 Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Jobs Page Header -->
+  <section class="jobs-header text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Find Your Dream Job!</h1>
+      <p class="lead">Explore the latest job openings and find the perfect match for you!</p>
+    </div>
+  </section>
+
+  <!-- Main Content Section -->
+  <div class="container">
+    <div class="row">
+      <!-- Sidebar for Filters -->
+      <div class="col-md-3">
+        <div class="filters bg-light p-4 rounded">
+          <h4 class="text-dark">Filter Jobs</h4>
+          <form>
+            <div class="form-group">
+              <label for="location" class="text-dark">Location</label>
+              <select class="form-control" id="location">
+                <option>Any Location</option>
+                <option>New York</option>
+                <option>San Francisco</option>
+                <option>London</option>
+                <option>Remote</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="job-type" class="text-dark">Job Type</label>
+              <select class="form-control" id="job-type">
+                <option>Any Job Type</option>
+                <option>Full-Time</option>
+                <option>Part-Time</option>
+                <option>Internship</option>
+                <option>Freelance</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="company" class="text-dark">Company</label>
+              <input type="text" class="form-control" id="company" placeholder="Search by Company">
+            </div>
+            <button type="submit" class="btn btn-dark btn-block">Filter Jobs</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Job Listings Section -->
+      <div class="col-md-9">
+        <div class="job-listings">
+          <h4>Job Openings</h4>
+          <!-- Job Grid Container -->
+          <div class="job-grid">
+            <!-- Job Card 1 -->
+            <div class="job-card bg-light p-3 mb-3 rounded">
+              <div class="job-content">
+                <div>
+                  <h5>Software Engineer</h5>
+                  <p>Company: Google</p>
+                  <p>Location: San Francisco</p>
+                </div>
+                <img src="gg.png".jpg" alt="Google Logo" class="job-logo">
+              </div>
+              <a href="#" class="btn btn-dark">Apply Now</a>
+            </div>
+            <!-- Job Card 2 -->
+            <div class="job-card bg-light p-3 mb-3 rounded">
+              <div class="job-content">
+                <div>
+                  <h5>Product Manager</h5>
+                  <p>Company: Microsoft</p>
+                  <p>Location: Remote</p>
+                </div>
+                <img src="mcs.png" alt="Microsoft Logo" class="job-logo">
+              </div>
+              <a href="#" class="btn btn-dark">Apply Now</a>
+            </div>
+            <!-- Job Card 3 -->
+            <div class="job-card bg-light p-3 mb-3 rounded">
+              <div class="job-content">
+                <div>
+                  <h5>UX Designer</h5>
+                  <p>Company: Apple</p>
+                  <p>Location: New York</p>
+                </div>
+                <img src="ap2.png" alt="Apple Logo" class="job-logo">
+              </div>
+              <a href="#" class="btn btn-dark">Apply Now</a>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <nav aria-label="Page navigation" class="d-flex justify-content-center mt-4">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo; Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">Next &raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-dark text-white mt-5">
+    <p>&copy; 2024 Green Algorithms. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS, Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

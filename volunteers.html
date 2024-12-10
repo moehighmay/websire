@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteers & Internships - Green Algorithms</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light text-dark">
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div class="logo">
+          <img src="file.enc" alt="Logo Placeholder" width="50"> <!-- Logo Placeholder -->
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="jobs.html">Jobs</a></li>
+            <li class="nav-item"><a class="nav-link" href="volunteers.html">Volunteers & Internships</a></li>
+            <li class="nav-item"><a class="nav-link" href="collab.html">Collaboration Companies</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+          <div class="auth-buttons ml-3">
+            <a href="#" class="btn btn-outline-light">🔒 Login / 🚀 Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>    
+  </header>
+
+  <!-- Volunteers & Internships Page Header -->
+  <section class="volunteers-header text-center py-5 bg-secondary text-white">
+    <div class="container">
+      <h1 class="display-4">Exciting Volunteer & Internship Opportunities!</h1>
+      <p class="lead">Join us and make a difference with your skills and passion.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Section -->
+  <div class="container">
+    <div class="row">
+      <!-- Sidebar for Filters -->
+      <div class="col-md-3">
+        <div class="filters bg-light p-4 rounded">
+          <h4>Filter Opportunities</h4>
+          <form>
+            <div class="form-group">
+              <label for="location">Location</label>
+              <select class="form-control" id="location">
+                <option>Any Location</option>
+                <option>New York</option>
+                <option>San Francisco</option>
+                <option>London</option>
+                <option>Remote</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="type">Opportunity Type</label>
+              <select class="form-control" id="type">
+                <option>Any Type</option>
+                <option>Volunteer</option>
+                <option>Internship</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-dark btn-block">Filter Opportunities</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Opportunity Listings Section -->
+      <div class="col-md-9">
+        <div class="opportunity-listings">
+          <h4>Available Opportunities</h4>
+
+          <!-- Opportunity Grid Container -->
+          <div class="opportunity-grid">
+            <!-- Opportunity Card 1 -->
+            <div class="opportunity-card bg-light p-3 mb-3 rounded">
+              <div class="opportunity-content">
+                <div>
+                  <h5>Environmental Volunteer</h5>
+                  <p>Location: Remote</p>
+                  <p>Duration: 3 months</p>
+                </div>
+                <img src="Screenshot (533).png" alt="Logo" class="opportunity-logo">
+              </div>
+              <a href="#" class="btn btn-dark">Apply Now</a>
+            </div>
+
+            <!-- Opportunity Card 2 -->
+            <div class="opportunity-card bg-light p-3 mb-3 rounded">
+              <div class="opportunity-content">
+                <div>
+                  <h5>Marketing Intern</h5>
+                  <p>Location: San Francisco</p>
+                  <p>Duration: 6 months</p>
+                </div>
+                <img src="10822222.png" alt="Logo" class="opportunity-logo">
+              </div>
+              <a href="#" class="btn btn-dark">Apply Now</a>
+            </div>
+
+            <!-- Opportunity Card 3 -->
+            <div class="opportunity-card bg-light p-3 mb-3 rounded">
+              <div class="opportunity-content">
+                <div>
+                  <h5>Web Development Intern</h5>
+                  <p>Location: New York</p>
+                  <p>Duration: 4 months</p>
+                </div>
+                <img src="/download (1).jpg" alt="Logo" class="opportunity-logo">
+              </div>
+              <a href="#" class="btn btn-dark">Apply Now</a>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <nav aria-label="Page navigation" class="d-flex justify-content-center mt-4">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo; Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a               class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">Next &raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-dark text-white mt-5">
+    <p>&copy; 2024 Green Algorithms. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS, Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

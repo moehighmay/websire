@@ -1,0 +1,679 @@
+/* Navbar Styling */
+.navbar {
+  background-color: #000000; /* Pure black background */
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px; /* Adds space between tabs */
+}
+
+.navbar-nav .nav-link {
+  text-decoration: none;
+  color: #ffffff; /* White text by default */
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px; /* Slightly rounded corners */
+  transition: all 0.3s ease; /* Smooth hover effect */
+  background-color: transparent; /* Transparent by default */
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #000000; /* White background on hover */
+  color: #ffffff; /* Black text on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+/* Login/Sign-Up Button */
+.auth-buttons .btn {
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 25px;
+  font-size: 15px;
+  border-radius: 25px; /* Rounded edges */
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
+  transition: all 0.3s ease;
+}
+
+.auth-buttons .btn:hover {
+  background-color: #000000; /* Black background on hover */
+  color: #ffffff; /* White text on hover */
+}
+
+/* Home Section */
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: url('/kk.jpg'); /* Placeholder for background image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-family: 'Poppins', sans-serif;
+  color: #000000; /* Set text color to black */}
+ 
+
+/* Big White Box Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; /* White background for the whole box */
+  padding: 30px; /* Padding inside the box */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  width: 80%; /* Make the box responsive */
+  max-width: 1000px; /* Limit the width */
+  border: 2px solid #000000; /* Black border for the whole container */
+}
+
+/* Individual Search Boxes */
+.search-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Space between the fields */
+}
+
+.search-box .form-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #2c3e50; /* Dark gray for labels */
+  font-weight: bold;
+}
+
+.search-box input {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #000000; /* Black border for the input fields */
+  border-radius: 8px;
+  background-color: #ffffff; /* Clean white background for inputs */
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #33cc71; /* Green focus color */
+  box-shadow: 0 0 10px rgba(51, 204, 113, 0.5);
+}
+
+/* Search Button Box */
+.search-btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+.search-btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #33cc71; /* Green button */
+  border: 2px solid #000000; /* Black border for the button */
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #27ae60; /* Slightly darker green on hover */
+}
+
+
+/*jobs*/
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f8f4; /* Light background for the body */
+  color: #000000; /* Default text color for the body */
+}
+
+/* Jobs Page Header */
+.jobs-header {
+  background-color: #333; /* Dark gray background for header */
+  color: white; /* White text */
+  padding: 60px 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Adding shadow to improve visibility */
+}
+
+.jobs-header h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.jobs-header p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Filters Sidebar */
+.filters {
+  background-color: #ffffff; /* White background for the filter box */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #000000; /* Ensures filter text is visible */
+}
+
+.filters h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.filters .form-group label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Adjusted input fields for Location and Job Type */
+.filters .form-control {
+  font-size: 14px;
+  padding: 12px 15px; /* Increased padding for better fit */
+  margin-bottom: 20px;
+  height: 45px; /* Adjusted height to fit text properly */
+  line-height: 1.5; /* Improved line-height for text readability */
+}
+
+
+.filters .btn {
+  background-color: #333; /* Dark button */
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.filters .btn:hover {
+  background-color: #555; /* Slightly darker on hover */
+}
+
+/* Job Listings Section */
+.job-listings {
+  background-color: #ffffff; /* White background for the listings */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Job Card Styling */
+.job-card {
+  background-color: #f9f9f9; /* Light gray background for job cards */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #000000; /* Thin black border around each job card */
+  color: #000000; /* Black text inside the job card */
+}
+
+.job-content {
+  display: flex;
+  justify-content: space-between; /* Distribute space between text and logo */
+  align-items: center;
+}
+
+.job-content div {
+  flex: 1; /* Ensures text section takes available space */
+}
+
+.job-logo {
+  width: 50px; /* Set width for logos */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the logo fits properly within the defined width */
+}
+
+/* Styling for job card heading and text */
+.job-card h5 {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.job-card p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.job-time {
+  font-size: 12px;
+  color: #7f8c8d; /* Light gray color for the time text */
+  margin-left: 10px;
+}
+
+.job-card .btn {
+  background-color: #333; /* Dark button for Apply */
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.job-card .btn:hover {
+  background-color: #555; /* Slightly darker on hover */
+}
+
+.job-card {
+  background-color: #ffffff; /* Light gray background for job cards */
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #000000; /* Thin black border around each job card */
+  color: #000000; /* Black text inside the job card */
+}
+
+.job-card h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.job-card p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.job-card .btn {
+  background-color: #333; /* Dark button for Apply */
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.job-card .btn:hover {
+  background-color: #555; /* Slightly darker on hover */
+}
+
+/* Pagination */
+/* Pagination Styling */
+.pagination {
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pagination .page-item {
+  margin: 0 5px;
+}
+
+.pagination .page-link {
+  background-color: #333; /* Dark background for pagination */
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.pagination .page-link:hover {
+  background-color: #555; /* Slightly darker on hover */
+  color: white;
+}
+
+/* Job Card Styling */
+.job-card {
+  background-color: #f9f9f9; /* Light gray background for job cards */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #000000; /* Thin black border around each job card */
+  color: #000000; /* Black text inside the job card */
+}
+
+.job-content {
+  display: flex;
+  justify-content: space-between; /* Distribute space between text and logo */
+  align-items: center;
+}
+
+.job-content div {
+  flex: 1; /* Ensures text section takes available space */
+}
+
+.job-logo {
+  width: 50px; /* Set width for logos */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the logo fits properly within the defined width */
+}
+
+/* Styling for job card heading and text */
+.job-card h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.job-card p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.job-card .btn {
+  background-color: #333; /* Dark button for Apply */
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.job-card .btn:hover {
+  background-color: #555; /* Slightly darker on hover */
+}
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f8f4; /* Light background for the body */
+  color: #000000; /* Default text color for the body */
+}
+
+/* Volunteers & Internships Page Header */
+.volunteers-header {
+  background-color: #333; /* Dark gray background for header */
+  color: white; /* White text */
+  padding: 60px 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Adding shadow to improve visibility */
+}
+
+.volunteers-header h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.volunteers-header p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Filters Sidebar */
+.filters {
+  background-color: #ffffff; /* White background for the filter box */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #000000; /* Ensures filter text is visible */
+}
+
+.filters h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.filters .form-group label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.filters .form-control {
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.filters .btn {
+  background-color: #333; /* Dark button */
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.filters .btn:hover {
+  background-color: #555; /* Slightly darker on hover */
+}
+
+/* Opportunity Listings Section */
+.opportunity-listings {
+  background-color: #ffffff; /* White background for the listings */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Opportunity Grid Container */
+.opportunity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns in a row */
+  gap: 20px; /* Space between the cards */
+}
+
+.opportunity-card {
+  background-color: #f9f9f9; /* Light gray background for opportunity cards */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #000000; /* Thin black border around each opportunity card */
+  color: #000000; /* Black text inside the opportunity card */
+}
+
+.opportunity-content {
+  display: flex;
+  justify-content: space-between; /* Distribute space between text and logo */
+  align-items: center;
+}
+
+.opportunity-content div {
+  flex: 1; /* Ensures text section takes available space */
+}
+
+.opportunity-logo {
+  width: 50px; /* Set width for logos */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the logo fits properly within the defined width */
+}
+
+/* Styling for opportunity card heading and text */
+.opportunity-card h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.opportunity-card p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.opportunity-card .btn {
+  background-color: #333; /* Dark button for Apply */
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.opportunity-card .btn:hover {
+  background-color: #555;
+}
+
+/* Pagination Styling */
+.pagination {
+  justify-content: center; /* Center the pagination */
+  margin: 10px 0; /* Add minimal spacing above and below */
+}
+
+.pagination .page-item {
+  margin: 0 5px; /* Add space between page items */
+}
+
+.pagination .page-link {
+  background-color: #333; /* Dark background for pagination links */
+  color: white; /* White text */
+  font-weight: bold; /* Bold font for better visibility */
+  border-radius: 5px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+.pagination .page-link:hover {
+  background-color: #555; /* Slightly lighter background on hover */
+  color: white; /* Keep the text white */
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #228b22; /* Highlight active page with green */
+  border-color: #228b22; /* Border matches active color */
+  color: white; /* White text for active item */
+}
+
+/*collab*/
+/* Collaboration Header */
+.collaboration-header {
+  text-align: center;
+  background-color: #333; /* Dark background for header */
+  color: white; /* White text */
+  padding: 60px 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for text */
+}
+/* Company Cards */
+.company-card {
+  border: 1px solid #ccc; /* Slightly lighter border */
+  border-radius: 10px; /* More rounded corners for modern look */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Softer shadow for a polished effect */
+  padding: 15px; /* Reduced padding for compact cards */
+  margin-bottom: 15px; /* Space between cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animations */
+  background: linear-gradient(135deg, #f9f9f9, #ffffff); /* Subtle gradient background */
+}
+
+.company-card:hover {
+  transform: translateY(-8px); /* Slight lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.company-card img {
+  width: 70%; /* Reduced size for smaller cards */
+  height: auto;
+  object-fit: contain; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space between the image and text */
+  transition: transform 0.3s ease; /* Add animation to the image */
+}
+
+.company-card img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.company-card h5 {
+  font-size: 1.2rem; /* Adjusted font size for titles */
+  color: #333; /* Darker color for better readability */
+  margin-bottom: 8px; /* Space below the title */
+  font-weight: bold;
+}
+
+.company-card p {
+  font-size: 0.9rem; /* Smaller text for compact design */
+  color: #555; /* Softer gray for descriptions */
+  line-height: 1.4; /* Improved readability */
+}
+
+
+/* Contact Form Section */
+.contact-form {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 40px 20px;
+}
+
+.contact-form h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+  font-weight: bold;
+}
+
+.contact-form button {
+  background-color: #333; 
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #555; 
+}
+/*contact*/
+/* Contact Header */
+.contact-header {
+  text-align: center;
+  background-color: #333; /* Dark background for the header */
+  color: white;
+  padding: 60px 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for text */
+}
+
+/* Map Placeholder */
+.map-placeholder {
+  background-color: #6c757d; /* Gray background for map placeholder */
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Contact Form */
+.contact-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-section .form-group label {
+  font-weight: bold;
+}
+
+.contact-section button {
+  background-color: #333; /* Dark button */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+  background-color: #555; /* Slightly lighter on hover */
+}
+
+footer {
+  text-align: center; /* Centers the text */
+  background-color: #333; /* Dark background for the footer */
+  color: white; /* White text */
+  padding: 10px 0; /* Add some vertical padding */
+  font-size: 14px; /* Ensure text is legible */
+}
+hr {
+  border: none; /* Removes the default border style */
+  height: 4px; /* Adjust thickness */
+  background-color: #333; /* Set a dark, visible color */
+  margin: 20px 0; /* Add spacing above and below */
+  width: 100%; /* Adjust width */
+  border-radius: 5px; /* Adds rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+
